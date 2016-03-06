@@ -75,9 +75,10 @@ function sortOrders(sim) {
         }, 0);
         //console.log('aItems', aItems, aCount);
         //console.log('bItems', bItems, bCount);
-        return bItems - aItems || bCount - aCount;
+        return aItems - bItems|| aCount - bCount ;
         //todo fix sorting
     });
+    //console.log('sortedorders', sortedOrders.slice(0,4).map(function(x){return x.items.toString()}));
     return sortedOrders;
 }
 function work(sim) {
